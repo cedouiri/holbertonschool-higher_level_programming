@@ -13,7 +13,7 @@ int check_cycle(listint_t *list)
 {
 	listint_t *f, *s;
 
-	if (!list->next)
+	if (!list || !list->next)
 		return (0);
 	f = list->next;
 	s = list;
