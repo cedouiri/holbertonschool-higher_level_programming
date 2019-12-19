@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
-    cp = a_dictionary.cp()
+    cp = {}
     for value in cp:
-        cp[value] *= 2
+        nv = my_dict[value] * 2
+        cp[value] = nv
     return cp
