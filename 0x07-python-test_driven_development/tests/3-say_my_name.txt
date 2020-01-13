@@ -1,0 +1,23 @@
+# doctest_2-matrix_divided.py
+"""
+doctest class
+"""
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("rihab", "douiri")
+My name is rihab douiri
+
+>>> say_my_name("drake", "hafdhi")
+My name is drake hafdhi
+
+>>> say_my_name(2, "chams")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name("chams", 0)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
