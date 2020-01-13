@@ -1,4 +1,4 @@
-# doctest_2-matrix_divided.py
+# doctest_3-say_my_name.py
 """
 doctest class
 """
