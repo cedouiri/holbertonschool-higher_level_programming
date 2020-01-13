@@ -1,0 +1,23 @@
+# doctest_5-text_indentation.py
+"""
+doctest class
+"""
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation(123456789)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation("checker")
+checker
+
+>>> text_indentation("hello world. hello holberton: where is checker? checker is not here")
+hello world.
+<BLANKLINE>
+hello holberton:
+<BLANKLINE>
+where is checker?
+<BLANKLINE>
+checker is not here
