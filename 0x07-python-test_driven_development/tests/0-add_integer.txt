@@ -1,0 +1,35 @@
+# doctest_0-add_integer.py
+""" doctest class """
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(-4, -5)
+-9
+
+>>> add_integer(4, -4)
+0
+
+>>> add_integer(5, 10)
+15
+
+>>> add_integer(5.4, 5.3)
+10
+
+>>> add_integer("ff", 7)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer({1})
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer(0.0, 0.0)
+0
+
