@@ -61,7 +61,7 @@ class Rectangle:
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.width, self.height)
-    
+
     def __del__(self):
         print("Bye rectangle...")
         self.__class__.number_of_instances -= 1
@@ -76,7 +76,7 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
-	
+
     @classmethod
     def square(cls, size=0):
         """ defining square """
