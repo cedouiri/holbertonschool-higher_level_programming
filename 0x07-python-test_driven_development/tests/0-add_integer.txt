@@ -6,9 +6,6 @@
 >>> add_integer(-4, -5)
 -9
 
->>> add_integer(4, -4)
-0
-
 >>> add_integer(5, 10)
 15
 
@@ -35,5 +32,7 @@ Traceback (most recent call last):
 ...
 TypeError: add_integer() missing 1 required positional argument: 'a'
 
->>> add_integer(0.0, 0.0)
-0
+>>> add_integer(float('NaN'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
