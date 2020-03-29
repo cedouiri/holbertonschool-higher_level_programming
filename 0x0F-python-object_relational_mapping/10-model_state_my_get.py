@@ -19,14 +19,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    search_state = argv[4]
-    found = list()
-    for state in session.query(State).filter(
-            State.name.contains('%a%')).order_by(
-            State.id).all():
-        if state:
-            found.append(state.id)
-            print("{}".format(found[0]))
-    if not found:
+    state = s.query(State).filter_by(name=argv[4]).first()
+    if state is not None:
+            print(str(state.id))
+    else:
         print("Not found")
     session.close()
