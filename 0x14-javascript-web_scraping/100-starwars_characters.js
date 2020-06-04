@@ -15,5 +15,3 @@ request(url, (err, res, body) => {
     });
   }
 });
-
-
